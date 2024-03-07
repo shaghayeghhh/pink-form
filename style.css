@@ -1,0 +1,293 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    47deg,
+    rgba(131, 58, 180, 0.7147233893557423) 0%,
+    rgba(166, 47, 178, 0.7483368347338936) 42%,
+    rgba(198, 42, 97, 0.6727065826330532) 100%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+}
+
+.Container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+}
+
+.form:hover {
+  margin: 10px;
+}
+
+p {
+  text-align: center;
+  padding-bottom: 34px;
+  color: white;
+  font-size: 21px;
+  padding-right: 16px;
+}
+
+.form {
+  display: flex;
+  position: relative;
+  box-shadow: 15px 8px 68px -43px black;
+  border-radius: 20px;
+  gap: 4rem;
+  color: rgb(29, 29, 29);
+  justify-content: center;
+  width: 412px;
+  min-height: 460px;
+  align-items: center;
+  backdrop-filter: blur(4px);
+  transition: ease-in-out 1s all;
+  top: 70px;
+}
+
+.form form {
+  width: 100%;
+}
+
+.form::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  filter: blur(1px);
+  opacity: 0.4;
+  background-color: rgb(194, 194, 194);
+  border-radius: 20px;
+}
+
+.form:hover .squar1 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  transition: ease-in-out 1s;
+}
+
+.Rows {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: -4px;
+  text-align: center;
+}
+#Row1 {
+  width: 100%;
+  gap: 20px;
+  justify-content: space-evenly;
+  margin-block: 0px 64px;
+  text-align: center;
+  display: block;
+}
+
+.Lastinput {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#input1 {
+  margin-right: 36px;
+}
+
+.Rows div label {
+  position: relative;
+  display: block;
+  color: rgb(255, 233, 245);
+  padding: 9px;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+label {
+  text-align: center;
+}
+
+.input {
+  border-radius: 17px;
+  width: 157px;
+  height: 28px;
+  border: solid 1px white;
+  background-color: rgb(251, 223, 255);
+  opacity: 0.5;
+  box-shadow: 5px 5px 8px rgba(99, 96, 96, 0.2);
+}
+
+.input:focus {
+  border-bottom: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  outline: none;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.squar1 {
+  position: absolute;
+  top: 20px;
+  right: -42px;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(194, 194, 194);
+  opacity: 0.5;
+  border: none;
+  border-radius: 5px;
+  backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 10px 10px 60px -8px rgb(0 0 0 / 20%);
+}
+
+.squar2 {
+  position: absolute;
+  top: 335px;
+  right: -51px;
+  width: 80px;
+  height: 80px;
+  background-color: rgb(194, 194, 194);
+  opacity: 0.5;
+  border: none;
+  border-radius: 5px;
+  z-index: -1;
+  backdrop-filter: blur(20px);
+}
+
+.squar3 {
+  position: absolute;
+  top: 498px;
+  right: -23px;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(194, 194, 194);
+  opacity: 0.5;
+  border: none;
+  border-radius: 5px;
+  backdrop-filter: blur(20px);
+}
+
+.squar4 {
+  position: absolute;
+  top: 320px;
+  left: 123px;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(194, 194, 194);
+  opacity: 0.5;
+  border: none;
+  border-radius: 5px;
+  z-index: -1;
+  backdrop-filter: blur(20px);
+}
+
+.squar5 {
+  position: absolute;
+  top: 50px;
+  left: -20px;
+  width: 51px;
+  height: 53px;
+  background-color: rgb(194, 194, 194);
+  opacity: 0.5;
+  border: none;
+  border-radius: 5px;
+  z-index: -1;
+  backdrop-filter: blur(20px);
+}
+
+button {
+  cursor: pointer;
+  border-radius: 17px;
+  color: rgb(255, 255, 255);
+  border: none;
+  background-color: rgb(247, 238, 248, 0.4);
+  box-shadow: 5px 5px 8px rgba(99, 96, 96, 0.2);
+  margin-left: -5px;
+  margin-top: 33px;
+}
+
+button {
+  position: relative;
+  border-radius: 17px;
+  width: 100px;
+  height: 32px;
+}
+.Addbutton {
+  display: block;
+  margin-block: 20px;
+}
+
+button:hover {
+  background-color: rgba(231, 231, 231, 0.5);
+  color: white;
+}
+
+#Button1 {
+  width: 20px;
+  height: 20px;
+  color: black;
+  margin-left: 27px;
+}
+
+#Button2 {
+  margin-left: -4px;
+}
+
+#Button3 {
+  margin-left: 10px;
+}
+
+.jsinput {
+  /*position: relative;
+    bottom: -141px;
+    right: 343px;*/
+  display: inline;
+  border-radius: 17px;
+  width: 157px;
+  height: 28px;
+  margin-top: 5px;
+  margin-right: 5px;
+  border: solid 1px white;
+  background-color: rgb(251, 223, 255);
+  opacity: 0.5;
+  box-shadow: 5px 5px 8px rgba(99, 96, 96, 0.2);
+}
+
+.jsinputdiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  left: 50px;
+}
+@media screen and (max-width: 550px) {
+  .Container {
+    top: calc(50%);
+    left: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Container {
+    top: calc(50%);
+    left: calc(50% - 16px);
+  }
+}
+
+@media screen and (max-width: 523px) {
+  .Container {
+    top: calc(50%);
+    left: calc(50% - 16px);
+  }
+}
